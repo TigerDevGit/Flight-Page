@@ -83,7 +83,7 @@ a:hover {
 
 @media screen and (max-width: 500px) {
   div {
-    width: 70%;
+    /*width: 70%;*/
   }
 }
 
@@ -121,13 +121,10 @@ a:hover {
 }
 
 .rdiv {
-  width: 400px;
-  position: absolute;
-  right: 50px;
-  top: 10%;
+
 }
 
-.rdiv .form, .outform{
+.rdiv .form{
   margin: 25px;
   padding: 20px;
 }
@@ -189,4 +186,5 @@ a:hover {
 
 .rdiv button {
   width: 100%;
+  white-space: normal;
 }
