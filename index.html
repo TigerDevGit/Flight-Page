@@ -7,8 +7,10 @@
   <link rel="icon" type="image/png" href="src/colored.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
 </head>
 
 <body>
@@ -22,17 +24,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="rdiv col-xs-12 col-sm-6 col-sm-offset-6 col-md-3 col-md-offset-7">
+      <div class="rdiv col-xs-12 col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-7 col-md-4 col-md-offset-7">
         <div class="form">
           <input type="text" class="rinput" id="exampleInputName2" placeholder="Pick From">
           <input type="text" class="rinput" id="exampleInputName2" placeholder="Drop To">
-          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Custom Charter Quote</button>
-          <button type="button" class="btn btn-warning">Block Hour / Ownership Inquiry</button>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Custom Charter Quote</button>
+          <button type="button" class="btn btn-info">Block Hour / Ownership Inquiry</button>
         </div>
       </div>
     </div>
     <div class="row">
-      <!-- Button trigger modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -50,11 +51,73 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
     </div>
   </div>
-
-
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="src/dropbox/F-a.jpg" width="80%" height="100%" alt="...">
+        <div class="carousel-caption">
+          Falcon 50
+        </div>
+      </div>
+      <div class="item">
+        <img src="src/dropbox/H-a.jpg" width="80%" height="100%" alt="...">
+        <div class="carousel-caption">
+          Hawker 800
+        </div>
+      </div>
+      <div class="item">
+        <img src="src/dropbox/G-a.jpg" width="80%" height="100%" alt="...">
+        <div class="carousel-caption">
+          Hawker 800
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="kinds row">
+    <div class="col-xs-12 col-sm-4">
+      <h2>Falcon 50</h2>
+      <hr/>
+      <img src="src/dropbox/F-b.jpg" width="100px" height="100px" />
+      <hr/>
+      <p>
+        The Dassault Falcon 50 is a French-built super mid-sized, long-range corporate jet, featuring a three jet engine layout with an S-duct central engine. It has the same fuselage cross-section and similar capacity as the earlier Falcon 20 twinjet but is a completely new design that is area ruled and includes a more advanced wing design.
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h2>Hawker 800</h2>
+      <hr/>
+      <img src="src/dropbox/H-b.jpg" width="100px" height="100px" />
+      <hr/>
+      <p>
+        The Hawker 800 is a mid-size twin-engine corporate aircraft. It is a development of the British Aerospace BAe 125, and was assembled by Hawker Beechcraft.
+        <br/> In April 1981, the British Aerospace Board sanctioned the programme to improve the British Aerospace 125-700 series. By May 1983 the new aircraft was ready for its first test flight.
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h2>Gulfstream IV</h2>
+      <hr/>
+      <img src="src/dropbox/G-b.jpg" width="100px" height="100px" />
+      <hr/>
+      <p>
+        The Gulfstream V (Model GV, pronounced Gee-5) is a long-range, large business jet aircraft produced by Gulfstream Aerospace, derived from the previous Gulfstream IV. It flies up to Mach 0.90, up to 51,000 feet (16,000 m) and has a 6,500 nautical miles (12,000 km) range. It typically accommodates four crew and 14 passengers. It first flew on November 28, 1995, and entered service in June 1997.
+      </p>
+    </div>
+  </div>
   <div class="oneslide" style="width: 100%; height: 100%; background: rgba(0,0,0,0.4);">
     <h1>Falcon 50</h1>
     <video width="100%" height="100%" playsinline autoplay muted loop>
@@ -73,37 +136,39 @@
       <source src="src/third.mp4" type="video/mp4">
     </video>
   </div>
-  <div id="polina">
-    <h1>Polina</h1>
-    <p>filmed by Alexander Wagner 2011
-      <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-        <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-        <button>Pause</button>
-  </div>
-  <div id="polina">
-    <h1>Polina</h1>
-    <p>filmed by Alexander Wagner 2011
-      <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-        <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-        <button>Pause</button>
-  </div>
-  <div id="polina">
-    <h1>Polina</h1>
-    <p>filmed by Alexander Wagner 2011
-      <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-        <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-        <button>Pause</button>
-  </div>
-  <div id="polina">
-    <h1>Polina</h1>
-    <p>filmed by Alexander Wagner 2011
-      <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-        <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-        <button>Pause</button>
+  <div class="articles">
+    <div id="polina">
+      <h1>Polina</h1>
+      <p>filmed by Alexander Wagner 2011
+        <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+          <button>Pause</button>
+    </div>
+    <div id="polina">
+      <h1>Polina</h1>
+      <p>filmed by Alexander Wagner 2011
+        <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+          <button>Pause</button>
+    </div>
+    <div id="polina">
+      <h1>Polina</h1>
+      <p>filmed by Alexander Wagner 2011
+        <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+          <button>Pause</button>
+    </div>
+    <div id="polina">
+      <h1>Polina</h1>
+      <p>filmed by Alexander Wagner 2011
+        <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+          <button>Pause</button>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
