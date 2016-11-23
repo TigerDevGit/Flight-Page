@@ -8,6 +8,7 @@ body {
   height: 100%;
   color: white;
   text-align: center;
+  text-shadow: 0px 0px 8px rgba(2, 1, 0, 1);
 }
 
 body {
@@ -122,8 +123,8 @@ a:hover {
 
 div.logo {
   background: #088ef0;
-  background: rgba(8,135,200,0.9);
-  background: rgba(8,142,240,0.9);
+  background: rgba(8, 135, 200, 0.9);
+  background: rgba(8, 142, 240, 0.9);
   padding: 10px;
 }
 
@@ -217,14 +218,24 @@ div.logo {
   position: relative;
 }
 
-.oneslide h1 {
+.oneslide div.title {
+  color: orange;
+  padding: 50px;
+}
 
+.oneslide div.main {
+  padding: 0 25% 25% 25%;
+  position: relative;
 }
 
 .oneslide video {
   position: relative;
   top: 50%;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
+
 div.kinds {
   background: rgba(48, 112, 165, 1);
   text-align: center;
