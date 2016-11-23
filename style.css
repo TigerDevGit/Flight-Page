@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
   color: white;
+  text-align: center;
 }
 
 body {
@@ -92,11 +94,13 @@ a:hover {
   /*html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }*/
   /*#bgvid { display: none; }*/
 }
+
 .container {
   width: 100%;
   height: 75%;
   position: relative;
 }
+
 .footer {
   width: 80%;
   position: absolute;
@@ -104,14 +108,23 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .footer div {
   padding: 25px;
   height: 130px;
 }
+
 .footer img {
   width: 100%;
   height: 100%;
   margin: auto;
+}
+
+div.logo {
+  background: #088ef0;
+  background: rgba(8,135,200,0.9);
+  background: rgba(8,142,240,0.9);
+  padding: 10px;
 }
 
 .our {
@@ -121,17 +134,15 @@ a:hover {
   transform: translateX(-50%);
 }
 
-.rdiv {
+.rdiv {}
 
-}
-
-.rdiv .form{
+.rdiv .form {
   margin: 25px;
   padding: 20px;
 }
 
 .rdiv .form {
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
   border-top: 5px #088ef0 solid;
 }
 
@@ -146,22 +157,30 @@ a:hover {
 }
 
 .rdiv .form input {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
 }
-::-webkit-input-placeholder { /* Chrome */
-  color: white;
-  opacity: .5;
-}
-:-ms-input-placeholder { /* IE 10+ */
+
+::-webkit-input-placeholder {
+  /* Chrome */
   color: white;
   opacity: .5;
 }
-::-moz-placeholder { /* Firefox 19+ */
+
+:-ms-input-placeholder {
+  /* IE 10+ */
   color: white;
   opacity: .5;
 }
-:-moz-placeholder { /* Firefox 4 - 18 */
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+  opacity: .5;
+}
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
   color: white;
   opacity: .5;
 }
@@ -178,19 +197,18 @@ a:hover {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .rdiv button {
   width: 100%;
   white-space: normal;
   text-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 15px, rgba(255, 255, 255, 0.498039) 0px 0px 10px;
-  font-size: 20px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.3),0 1px 2px rgba(0,0,0,.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
   background: #088ef0;
   border: #088ef0 1px solid;
 }
@@ -198,24 +216,22 @@ a:hover {
 .oneslide {
   position: relative;
 }
+
 .oneslide h1 {
-  color: white;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 50px;
 
 }
 
-div.kinds{
-  background: rgba(48,112,165,1);
+.oneslide video {
+  position: relative;
+  top: 50%;
+}
+div.kinds {
+  background: rgba(48, 112, 165, 1);
   text-align: center;
   padding: 5%;
-
 }
 
-div.kinds img{
+div.kinds img {
   border-radius: 10%;
 }
 
@@ -223,24 +239,21 @@ div.kinds h2 {
   text-shadow: 0px 0px 45px rgba(0, 0, 0, 1);
 }
 
-div.carousel {
-
-}
+div.carousel {}
 
 div.carousel div.item {
   height: 500px;
-  background: rgba(55,55,55,0.7);
+  background: rgba(55, 55, 55, 0.7);
 }
 
 div.carousel div.item img {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
-
-  -webkit-box-shadow: 0px 0px 40px 10px rgba(154,107,255,1);
-  -moz-box-shadow: 0px 0px 40px 10px rgba(154,107,255,1);
-  box-shadow: 0px 0px 40px 10px rgba(154,107,255,1);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
+  -moz-box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
+  box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
 }
 
 div.carousel .carousel-caption {

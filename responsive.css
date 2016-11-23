@@ -1,36 +1,41 @@
-/*@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
-    border: black 2px solid;
+    /*border: black 2px solid;*/
   }
+  div.rdiv button {font-size: 10px;}
 }
 
 @media only screen and (min-width: 600px) {
   body {
-    border: cyan 2px solid;
+    /*border: cyan 2px solid;*/
   }
+  div.rdiv button {font-size: 13px;}
 }
 
 @media only screen and (min-width: 768px) {
   body {
-    border: blue 2px solid;
+    /*border: blue 2px solid;*/
   }
+  div.rdiv button {font-size: 13px;}
 }
 
 @media only screen and (min-width: 972px) {
   body {
-    border: green 2px solid;
+    /*border: green 2px solid;*/
   }
+  div.rdiv button {font-size: 13px;}
 }
 
 @media only screen and (min-width: 1200px) {
   body {
-    border: red 2px solid;
+    /*border: red 2px solid;*/
   }
+  div.rdiv button {font-size: 18px;}
 }
 
 @media only screen and (min-width: 1366px) {
   body {
-    border: orange 2px solid;
+    /*border: orange 2px solid;*/
   }
+  div.rdiv button {font-size: 20px;}
 }
-*/
