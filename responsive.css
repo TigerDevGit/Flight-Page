@@ -39,3 +39,13 @@
   }
   div.rdiv button {font-size: 20px;}
 }
+
+.ttt {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 750px){
+  .ttt {
+    display: block;
+  }
+}
