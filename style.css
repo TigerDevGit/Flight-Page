@@ -26,7 +26,6 @@ video#bgvid {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -54,31 +53,13 @@ h1 {
   letter-spacing: .3rem;
 }
 
-#polina button {
-  display: block;
-  width: 80%;
-  padding: .4rem;
-  border: none;
-  margin: 1rem auto;
-  font-size: 1.3rem;
-  background: rgba(255, 255, 255, 0.23);
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: .3s background;
-}
-
-#polina button:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
 a {
   display: inline-block;
   color: #fff;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.9);
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -118,9 +99,8 @@ a:hover {
 }
 
 div.logo {
-  background: #088ef0;
-  background: rgba(8, 135, 200, 0.9);
   background: rgba(8, 142, 240, 0.9);
+  background: rgba(72, 133, 237, 0.9);
   padding: 10px;
 }
 
@@ -131,7 +111,10 @@ div.logo {
   transform: translateX(-50%);
 }
 
-.rdiv {}
+.rdiv {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
 
 .rdiv .form {
   margin: 25px;
@@ -201,20 +184,33 @@ div.logo {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.rdiv button {
+button {
   width: 100%;
   white-space: normal;
   text-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 15px, rgba(255, 255, 255, 0.498039) 0px 0px 10px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
-  background: #088ef0;
-  border: #088ef0 1px solid;
+  background: #4885ed;
+  border: #4885ed 1px solid;
+}
+
+.oneslide button {
+  width: 33%;
+  border-radius: 75% 0 75% 0;
+  text-shadow: rgba(60, 186, 255, 0.498039) 0px 0px 15px, rgba(255, 255, 255, 0.498039) 0px 0px 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
+  background: #3cba54;
+  border: #3cba54 1px solid;
 }
 
 .oneslide {
   position: relative;
   padding: 100px 30px;
+  line-height: 50px;
 }
-
+.oneslide p {
+  font-size: 1.3em;
+  white-space: nowrap;
+}
 .oneslide h1 {
   color: orange;
 }
@@ -223,9 +219,9 @@ div.logo {
   border-radius: 25px;
   position: relative;
   top: 50%;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 25px 25px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 25px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 25px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 div.kinds {
@@ -252,9 +248,9 @@ div.carousel div.item img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
-  -moz-box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
-  box-shadow: 0px 0px 40px 10px rgba(154, 107, 255, 1);
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(255,255,255, 1);
+  -moz-box-shadow: 0px 0px 40px 10px rgba(255,255,255, 1);
+  box-shadow: 0px 0px 40px 10px rgba(255,255,255, 1);
 }
 
 div.carousel .carousel-caption {
@@ -283,4 +279,27 @@ div.footer-social img {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.myfooter {
+  padding: 10%;
+  background: rgba(0,0,0,0.7);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.footer-social a {
+  margin: 5% 3%;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 16px;
 }
